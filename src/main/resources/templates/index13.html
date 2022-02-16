@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" lang="en">
+<ul>
+  <li><a class="active" th:href="@{/home}">Home</a></li>
+  <li><a th:href="@{/his}">Historical</a></li>
+  <li><a th:href="@{/nature}">Nature</a></li>
+  <li><a th:href="@{/mod}">modern</a></li>
+ 
+</ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style13.css">
+
+</head>
+<body>
+   
+<div class="box-container">
+
+    <div class="box">
+
+        <div class="image-container">
+
+            <div class="big-image">
+                <img src="images/n13.jpg" alt="">
+            </div>
+
+            <div class="small-image">
+                <img class="active" src="images/n13.jpg" alt="">
+                <img src="images/q13.jpg" alt="">
+                <img src="images/nn13.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <h3 class="title"> Waterfall</h3>
+            <div class="price">₹1000/-</div>
+            <p>Reems Art Painting | steep drops| Contemporary | Painting for Home décor</p>
+
+            <form action="">
+            <p class="detail-short-description"> 
+              <br>Brand:   Reems<br>
+              Size:  X-Large<br>
+              Colour : Multicolour<br>
+              Material : Fabric<br>
+              Theme : History<br>
+              Paint Type : Oil<br>
+              Item Dimensions : 119.4 x 88.9 x 1 Centimeters<br>
+              Weight : 200 Grams<br>
+              Frame Material : Plastic<br>
+            </p>
+            </form>
+
+            <a href="check"><button class="btn"> <i class="fas fa-shopping-cart"></i> payment </button></a>
+            <span class="stock"> <i class="fas fa-check"></i> in stock </span>
+            <div class="share">
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">pinterest</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>    
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.small-image img').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        let image = $(this).attr('src');
+        $('.big-image img').attr('src',image);
+
+    });
+
+});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

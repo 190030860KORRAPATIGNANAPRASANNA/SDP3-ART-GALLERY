@@ -1,0 +1,127 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" lang="en">
+<link rel="stylesheet" href="/css/his.css">
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Art Gallery</label>
+      <ul>
+        <li><a class="active" th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/his}">Historical</a></li>
+        <li><a th:href="@{/nature}">Nature</a></li>
+        <li><a th:href="@{/mod}">Modern</a></li>
+        <li><form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-info" value="logout"/>
+        </form></li>
+
+      </ul>
+    </nav>
+    <section></section>
+
+<ul class="cards">
+
+  <li>
+    <a th:href="@{/index7}" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Equestrian_Portrait_of_the_Emperor_Shah_Jahan_from_the_Kevorkian_Album.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src="https://upload.wikimedia.org/wikipedia/commons/9/99/MFHussain2.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Moghal Emperor</h3> 
+            <span class="card__tagline">India</span>  			
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">The Kalingas have been mentioned as a major tribe in the legendary text Mahabharata</p>
+      </div>
+    </a>      
+  </li>
+  <li>
+    <a th:href="@{/index8}" class="card">
+      <img src="https://i.pinimg.com/564x/ba/7d/04/ba7d043c110d208aa3291d4b23d787ea.jpg" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/11/19/fdbe06d4-2948-11eb-bf26-f2b76f37a526_image_hires_102023.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Josean Dynasty</h3>
+			<span class="card__tagline">South Korea</span>  
+            <span class="card__status">3 hours ago</span>
+          </div>
+        </div>
+        <p class="card__description">The Joseon period has left a substantial legacy to modern Korea; much of modern Korean culture, etiquette, norms, and societal attitudes towards current issues, along with the modern Korean language and its dialects, derive from the culture and traditions of Joseon</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a th:href="@{/index9}" class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxHgspwB4Sm1LVHgH3kzDXu9hrh6k5-TJ3A&usqp=CAU" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+          <img class="card__thumb" src="https://pbs.twimg.com/profile_images/1404425445869703176/2iwwHwNs_400x400.jpg" alt="" />		  
+          <div class="card__header-text">
+            <h3 class="card__title">Qin Dyansty</h3>
+            <span class="card__tagline">China</span>            
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">The height of Qing glory and power was reached in the reign of the Qianlong Emperor (1735-1796).</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a th:href="@{/index10}" class="card">
+      <img src="https://cdn.britannica.com/10/122010-004-C2E8A74B/Meiji.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_443/MTc1MTEwODI0MzIyMDgxODg3/top-20-the-most-handsome-hottest-and-talented-japanese-actors.webp" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Meiji Emperor</h3>
+			 <span class="card__tagline">Japan</span>   
+            <span class="card__status">3 hours ago</span>
+          </div>          
+        </div>
+        <p class="card__description">Emperor Meiji,[a] (æ˜Žæ²»å¤©çš‡, Meiji-tennÅ�, 3 November 1852 â€“ 30 July 1912) also called Meiji the Great (æ˜Žæ²»å¤§å¸�, Meiji-taitei) or Meiji the Good, (æ˜Žæ²»è�–å¸�, Meiji-seitei) was the 122nd emperor of Japan according to the traditional order of succession.</p>
+      </div>
+    </a>
+  </li>   
+<li>
+    <a th:href="@{/index11}" class="card">
+      <img src="https://n1.sdlcdn.com/imgs/b/b/k/Wow-Interiors-and-Decors-White-SDL948328441-1-17ba1.jpg" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/05/07/973023-kendall-jenner.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Kandyan Period</h3>
+			<span class="card__tagline">Sri Lanka</span>   
+            <span class="card__status">3 hours ago</span>
+          </div>
+        </div>
+        <p class="card__description">Kandyan era frescoes are mural paintings created during the Kingdom of Kandy (1469â€“1815) in Sri Lanka, a time when kings gave a special place to arts and literature.</p>
+      </div>
+    </a>
+  </li>
+<li>
+    <a th:href="@{/index12}" class="card">
+      <img src="https://i.pinimg.com/564x/92/8a/84/928a841f90ae84305ed0dd2c0265c6fa.jpg" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Edward VII</h3>
+			<span class="card__tagline">British</span>  
+            <span class="card__status">3 hours ago</span>
+          </div>
+        </div>
+        <p class="card__description">The British Empire was composed of the dominions, colonies, protectorates, mandates, and other territories ruled or administered by the United Kingdom and its predecessor states</p>
+      </div>
+    </a>
+  </li>  
+</ul>

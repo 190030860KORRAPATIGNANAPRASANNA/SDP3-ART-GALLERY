@@ -1,0 +1,85 @@
+  <html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" lang="en">
+  <link rel="stylesheet" href="/css/viecardstyle.css">
+   <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Art Gallery</label>
+      <ul>
+        <li><a class="active" th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/his}">Historical</a></li>
+        <li><a th:href="@{/nature}">Nature</a></li>
+        <li><a th:href="@{/mod}">Modern</a></li>
+        <li><form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-info" value="logout"/>
+        </form></li>
+
+      </ul>
+    </nav>
+    <section></section>
+</body>
+<div class="grid">
+	<div class="card">
+		<div class="card__img">
+			<img src="https://i.pinimg.com/564x/19/d2/68/19d2686e8291e52611a15e747279e087.jpg" alt="">
+		</div>
+		<div class="card__contenido">
+			<h3 class="card__title">
+				Easy Animal Drawings for Kids
+			</h3>
+			<div class="divider"></div>
+			<p class="card__text">
+				Step by Step Easy Animals drawing tutorials and drawing lessons for kids of all ages. You can draw nice drawings by following our short easy directions.
+			</p>
+			<a th:href="@{/vie1}" class="card__readbtn">read more</a>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card__img">
+			<img src="https://i.pinimg.com/236x/cf/cd/15/cfcd15f5a4f68ba6d99b06aa681ffa48.jpg" alt="">
+		</div>
+		<div class="card__contenido">
+			<h3 class="card__title">
+				Easy Fruits Drawings for Kids
+			</h3>
+			<div class="divider"></div>
+			<p class="card__text">
+				Step by Step Easy fruits drawing tutorials and drawing lessons for of all ages. You can draw nice drawings by following our short easy directions.
+			</p>
+			<a th:href="@{/vie2}" class="card__readbtn">read more</a>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card__img">
+			<img src="https://i.pinimg.com/236x/55/2f/cd/552fcd01438312c2d08be8186a467308.jpg" alt="">
+		</div>
+		<div class="card__contenido">
+			<h3 class="card__title">
+				Easy House Drawings for Kids
+			</h3>
+			<div class="divider"></div>
+			<p class="card__text">
+				Step by Step Easy House drawing tutorials and drawing lessons for kids of all ages. You can draw nice drawings by following our short easy directions.
+			</p>
+			<a th:href="@{/vie3}" class="card__readbtn">read more</a>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card__img">
+			<img src="https://i.pinimg.com/564x/d8/6d/47/d86d47cd71f5851a32f76b276752bd2c.jpg" alt="">
+		</div>
+		<div class="card__contenido">
+			<h3 class="card__title">
+				Easy Ladybug Drawings for Kids
+			</h3>
+			<div class="divider"></div>
+			<p class="card__text">
+				Step by Step Easy Ladybug drawing tutorials and drawing lessons for kids of all ages. You can draw nice drawings by following our short easy directions.
+			</p>
+			<a th:href="@{/vie4}" class="card__readbtn">read more</a>
+		</div>
+	</div>
+</div>
+</html>

@@ -1,0 +1,38 @@
+  <html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" lang="en">
+   <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Art Gallery</label>
+      <ul>
+        <li><a class="active" th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/his}">Historical</a></li>
+        <li><a th:href="@{/nature}">Nature</a></li>
+        <li><a th:href="@{/mod}">Modern</a></li>
+        <li><form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-info" value="logout"/>
+        </form></li>
+
+      </ul>
+    </nav>
+    <section></section>
+   <link rel="stylesheet" href="/css/viediomain.css">
+  <div class="blog-card">
+    <div class="meta">
+      <div class="photo" style="background-image: url(https://media.istockphoto.com/photos/beautiful-happy-boy-with-painted-hands-picture-id1207261035?b=1&k=20&m=1207261035&s=170667a&w=0&h=GqCsnsQSU6kDrlFNuBHSPAqnrKzGhJrdpE9XEQapHH0=)"></div>
+      <ul class="details">
+        
+    </div>
+    <div class="description">
+      <h1>Learn Art : Children</h1>
+      <p> Step by Step Easy drawing tutorials and drawing lessons for kids of all ages. You can draw nice drawings by following our short easy directions.</p>
+      <p class="read-more">
+        <a th:href="@{/viecard}">Read More</a>
+      </p>
+    </div>
+  </div>
+  
+  </div>
+  </html>

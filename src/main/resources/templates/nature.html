@@ -1,0 +1,125 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" lang="en">
+<link rel="stylesheet" href="/css/mod.css">
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Art Gallery</label>
+      <ul>
+        <li><a class="active" th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/his}">Historical</a></li>
+        <li><a th:href="@{/nature}">Nature</a></li>
+        <li><a th:href="@{/mod}">Modern</a></li>
+        <li><form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-info" value="logout"/>
+        </form></li>
+
+      </ul>
+    </nav>
+    <section></section>
+    <section></section>
+<link rel="stylesheet" href="css.css">
+<ul class="cards"> 
+  <li> 
+    <a th:href="@{/index13}" class="card"> 
+      <img src="https://i.pinimg.com/564x/ef/94/36/ef94362275708795116c78f4594c3540.jpg" class="card__image" alt="" /> 
+      <div class="card__overlay"> 
+        <div class="card__header"> 
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      
+          <img class="card__thumb" src="https://wallpapercave.com/wp/wp4980036.jpg" alt="" /> 
+          <div class="card__header-text"> 
+            <h3 class="card__title"> Waterfall</h3>             
+            <span class="card__status">1 hour ago</span> 
+          </div> 
+        </div> 
+        <p class="card__description">A waterfall is a point in a river or stream where water flows over a vertical drop or a series of steep drops. Waterfalls also occur where meltwater drops over the edge of a tabular iceberg or ice shelf.</p> 
+      </div> 
+    </a>       
+  </li> 
+  <li> 
+    <a th:href="@{/index14}" class="card"> 
+      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/mother-nature-silpa-saseendran.jpg" class="card__image" alt="" /> 
+      <div class="card__overlay">         
+        <div class="card__header"> 
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  
+          <img class="card__thumb" src="https://img.koreatimes.co.kr/upload/newsV2/images/202105/488baef70a3c43d2b58d0cc8322f2f78.jpg/dims/resize/740/optimize" alt="" /> 
+          <div class="card__header-text"> 
+            <h3 class="card__title">Soul of Human</h3> 
+            <span class="card__status">3 hours ago</span> 
+          </div> 
+        </div> 
+        <p class="card__description">Birds are a group of warm-blooded vertebrates constituting the class Aves characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton</p> 
+      </div> 
+    </a> 
+  </li> 
+  <li> 
+    <a th:href="@{/index15}" class="card"> 
+      <img src="https://rukminim1.flixcart.com/image/416/416/jyug0i80/painting/5/b/d/na-02-sraf-original-imafgyxs72uwg6qc.jpeg?q=70" class="card__image" alt="" /> 
+      <div class="card__overlay"> 
+        <div class="card__header"> 
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      
+          <img  class="card__thumb" src="https://1739752386.rsc.cdn77.org/data/images/full/233692/lee-min-ho-and-his-beautiful-k-drama-leading-ladies-over-the-years.jpg?w=600?w=650" alt="" />
+          <div class="card__header-text"> 
+            <h3 class="card__title">Sky is the Panorama</h3> 
+
+            <span class="card__status">1 hour ago</span> 
+          </div> 
+        </div> 
+        <p class="card__description">The sky is the panorama obtained from observing the universe from the Earth and other celestial bodies' surface.
+
+In the field of astronomy, the sky is also called the celestial sphere</p> 
+      </div> 
+    </a> 
+  </li> 
+  <li> 
+    <a th:href="@{/index16}" class="card"> 
+      <img src="https://m.media-amazon.com/images/I/8115bL9HIvL._SX522_.jpg" class="card__image" alt="" /> 
+      <div class="card__overlay"> 
+        <div class="card__header"> 
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  
+          <img class="card__thumb" src="https://m.media-amazon.com/images/M/MV5BY2JlMTM3ZTMtODE5YS00MTBjLWE2MjUtYWJkZWEwOTc0MzA3XkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_SX300_.jpg" alt="" /> 
+          <div class="card__header-text"> 
+            <h3 class="card__title">Wind of Shade</h3> 
+            <span class="card__status">3 hours ago</span> 
+          </div>           
+        </div> 
+        <p class="card__description">It's a commonly known fact that plants are vital for sustaining our earth's ecosystem; they provide oxygen, filter carbon, purify soil and are a support network for wildlife.</p> 
+      </div> 
+    </a> 
+  </li> 
+<li> 
+    <a th:href="@{/index17}" class="card"> 
+      <img src="https://i.pinimg.com/564x/7a/e7/0e/7ae70efb0f9e13d869c036d87ebc52af.jpg" class="card__image" alt="" /> 
+      <div class="card__overlay"> 
+        <div class="card__header"> 
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      
+          <img class="card__thumb" src="http://www.koreandrama.org/wp-content/uploads/2019/10/Unasked-Family3.jpg" alt="" /> 
+          <div class="card__header-text"> 
+            <h3 class="card__title"> Spark of Trees</h3>             
+            <span class="card__status">1 hour ago</span> 
+          </div> 
+        </div> 
+        <p class="card__description">This is an oil painting on canvas by Leonid Afremov made using a palette knife only. - Lonely night by Leonid Afremov.</p> 
+      </div> 
+    </a>       
+  </li> 
+<li> 
+    <a th:href="@{/index18}" class="card"> 
+      <img src="https://i.pinimg.com/564x/3c/42/a4/3c42a42f8dc61945fef92eae4f5f422c.jpg" class="card__image" alt="" /> 
+      <div class="card__overlay"> 
+        <div class="card__header"> 
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      
+          <img class="card__thumb" src="https://image.kpopmap.com/2016/03/YeWon.jpg" alt="" /> 
+          <div class="card__header-text"> 
+            <h3 class="card__title"> Sea Shore</h3>             
+            <span class="card__status">1 hour ago</span> 
+          </div> 
+        </div> 
+        <p class="card__description">â€œRaynald Leclerc "Reflection (Isle-aux-Grues)"#art #painting #colores #iloveart #artwit #followart #fineart #artweetâ€�.</p> 
+      </div> 
+    </a>       
+  </li>  
+</ul>
+</html>

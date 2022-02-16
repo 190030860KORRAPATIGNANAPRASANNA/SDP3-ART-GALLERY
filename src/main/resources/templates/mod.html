@@ -1,0 +1,122 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5" lang="en">
+<link rel="stylesheet" href="/css/mod.css">
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Art Gallery</label>
+      <ul>
+        <li><a class="active" th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/his}">Historical</a></li>
+        <li><a th:href="@{/nature}">Nature</a></li>
+        <li><a th:href="@{/mod}">Modern</a></li>
+        <li><form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-info" value="logout"/>
+        </form></li>
+
+      </ul>
+    </nav>
+    <section></section>
+    <section></section>
+<ul class="cards">
+  <li>
+    <a th:href="@{/index1}" class="card">
+      <img src="https://i.pinimg.com/564x/aa/ab/63/aaab638249a5e1e63a0b5e23b4194a11.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src="https://i.mydramalist.com/rvXKD_2f.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">JUGALBANDI</h3>            
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">Dev Religious Art Canvas Paintings | Jugalbandi | God Paintings | Contemporary | Modern Art Home Décor</p>
+      </div>
+    </a>      
+  </li>
+  <li>
+    <a th:href="@{/index2}" class="card">
+      <img src="https://m.media-amazon.com/images/I/91sDU6PeUoL._SY450_.jpg" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Jung_Hae-in_at_56th_Grand_Bell_Awards.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">DEVESH LORD SHIVA</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>
+        </div>
+        <p class="card__description">Dev Religious Art Canvas Paintings | Devesh Lord Shiva | God Paintings | Contemporary | Modern Art Home Décor</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a th:href="@{/index3}" class="card">
+      <img src="https://m.media-amazon.com/images/I/71uQWiPXyRL._SY450_.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src="https://lh3.googleusercontent.com/-sOx4dWq6i_c/V3XLDv_oEPI/AAAAAAAAHxk/evNsujmkudwYslCTx37TL5yz4kcFQ1CwQCHM/w180-h250-c/2834.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">SISTERS AT THE DOOR</h3>
+                   
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">Virat Academic Art Canvas Painting | Sisters At The Door | Raja Ravi Verma Classic Indian Painting For Home Décor</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a th:href="@{/index4}" class="card">
+      <img src="https://m.media-amazon.com/images/I/81DMZr5h6BL._SL1500_.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://qphs.fs.quoracdn.net/main-qimg-7e3b35f2966412780ff09afccfc5d420-lq" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">DOWN THE PARK</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>          
+        </div>
+        <p class="card__description">Tamimmy Modern Art Canvas Painting |Down The Parka | Contemporary | Abstract Art Unframed Painting For Home Décor</p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a th:href="@{/index5}" class="card">
+      <img src="https://m.media-amazon.com/images/I/81VFY5O8NkL._SL1500_.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">SUFIYANA</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>          
+        </div>
+        <p class="card__description">Tamatina Modern Art Canvas Painting | Sufiyana | Contemporary | Abstract Art Unframed Painting For Home Décor</p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a th:href="@{/index6}" class="card">
+      <img src="https://i.pinimg.com/564x/4a/9b/11/4a9b1133182ff8021b0ce914319fd925.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="https://scontent.fvga5-1.fna.fbcdn.net/v/t1.6435-9/135076317_251800136304565_2489027336748538551_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=e3f864&_nc_ohc=n3kjvW9LhgsAX__a0Xa&_nc_ht=scontent.fvga5-1.fna&oh=00_AT8Mghsrg-iu4SdlfJJkSRnuOAh_wNDKzcG4Hjqr1MHIOA&oe=61E9A50C" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">FOREST LANDSCAPE</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>          
+        </div>
+        <p class="card__description">Forest Landscape Canvas Print / Canvas Art</p>
+      </div>
+    </a>
+  </li>    
+</ul>
+</html>
